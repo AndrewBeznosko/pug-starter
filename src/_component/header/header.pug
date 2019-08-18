@@ -1,0 +1,29 @@
+nav.navbar.navbar-expand-md.fixed-top
+  a.navbar-brand(href="#")
+    img(src='asset/image/logo.svg' alt="")
+  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+      img(src="asset/image/nav/burger.svg" alt="burger")
+  #navbarsExampleDefault.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.dropdown
+        a#dropdown01.nav-link.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          | Продукты 
+          img(src='asset/image/nav/arrow.svg' alt="arrow")
+          .dropdown-menu(aria-labelledby="dropdown01")
+            a.dropdown-item(href="#platforma_dlya_obuchenia") Платформа для онлайн-обучения
+            a.dropdown-item(href="#marketing_instrument") Инструменты маркетинга
+            a.dropdown-item(href="#prodvizhenie_lichnogo_brenda") Продвижение личного бренда
+            a.dropdown-item(href="#globalnyi_poisk") Глобальный поиск экспертов
+            a.dropdown-item(href="#delovaya_socialnaya_set") Деловая социальная сеть
+      li.nav-item.active.d-none
+        a.nav-link(href="#") Расписание
+      li.nav-item
+        a.nav-link(href="#produsirovanie") Продюсирование
+      li.nav-item
+        a.nav-link(href="https://p.smartexpert.net/author-rating") Наши эксперты
+      li.nav-item
+        a.nav-link(href="#tarifs") Цены
+    form.form-inline.my-2.my-lg-0
+      a.btn.btn-success-1.my-2.my-sm-0.mr-sm-2.d-none(href="#") Пробная версия
+      a.btn.btn-success-2.my-2.my-sm-0(href="https://p.smartexpert.net/login") Войти
