@@ -1,5 +1,13 @@
 extends _component/layout/main_layout.pug
 
 block content
-  .container
-    h1.my-5 Наш другой контент
+    section.sec.sec_banner(style="background-image: url('asset/image/sec-platforma-dlya-online-obuchenia/bg__platforma_dlya_online_obuchenia.svg')")
+        .container
+            .row
+                .col-md-7
+                    h1 Платформа для онлайн обучения
+                    p Вас ждет удобный конструктор курсов, который позволит настроить обучение максимально эффективно. Добавляйте обучающие материалы, создавайте онлайн мероприятия, проводите вебинары и мастермаинды. 
+                    a.btn.btn-primary( href='#' ) Начать использовать
+                .col-md-5.position-relative
+                    img( src="asset/image/sec-platforma-dlya-online-obuchenia/banner__platforma_dlya_online_obuchenia.svg" )  
+    
