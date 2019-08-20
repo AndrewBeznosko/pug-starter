@@ -1,0 +1,31 @@
+extends _component/layout/main_layout.pug
+
+block content
+  section.sec.sec_banner(style="background-image: url('asset/image/sec-platforma-dlya-online-obuchenia/bg__platforma_dlya_online_obuchenia.svg')")
+    .container
+      .row
+        .col-md-7
+          h1 Продвижение личного бренда
+          p Все новые технологии и методики продвижения личного бренда на платформе Smart Expert. Создай свою собственную БИЗНЕС ВИЗИТКУ, укажи все свои достижения и результаты, интересы, навыки и специализацию. И это увидят более 2 млн человек! 
+          a.btn.btn-primary( href='#' ) Начать использовать
+        .col-md-5.position-relative
+          img( src="asset/image/banners/personal-brand-promotion.svg" )  
+
+  sections.sec.sec_with_sliders
+    .container
+      .screen_list
+          +block_slider(
+            'Создайте свою бизнес визитку', 
+            'В сообществе Smart Expert у вас есть возможность создать свою собственную бизнес визитку. Укажите свои навыки и специальность, места работы и должность, проекты и результаты по ним. Это позволит вам прокачать свой бренд, стать узнаваемым экспертом и легко настраивать деловые связи в рамках Smart Expert.',
+            'сreate_your_own_business_card-1.jpg',
+            'сreate_your_own_business_card-1.jpg'
+          )  
+          +block_slider(
+            'Продвигайте свою экспертность: контент-маркетинг ', 
+            'Мы предлагаем уникальный инструмент продвижения своих личного бренда и экспертности. Пишите уникальные статьи, размещайте их на портале 5SFER и продвигайте на аудиторию в более 2 млн. человек. Если вы крутой эксперт - вы быстро обретете популярность и соберете вокруг себя лояльную аудиторию! ',
+            'kontent_marketing-1.jpg',
+            'kontent_marketing-1.jpg'
+          )  
+          
+
+          

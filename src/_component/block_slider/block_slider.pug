@@ -1,0 +1,11 @@
+mixin block_slider(header, paragraf, ...images)
+  .row.align-items-center
+    .col-md-6
+      .slide_bg
+        .imageSlider
+            each image in images
+              img(src="./asset/image/slides/" + image)
+    .col-md-6
+      .text
+        h3= header
+        p= paragraf 

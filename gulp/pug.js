@@ -49,12 +49,12 @@ const pug = ({ gulp, taskTarget, config, plugins, args, browserSync, baseUrl }) 
             plugins.changed(taskTarget)
           )
         )
-        .pipe(plugins.plumber({
-          errorHandler: plugins.notify.onError({
-            title: 'Error converting PUG',
-            message: 'Error: <%= error.message %>'
-          })}
-        ))
+        // .pipe(plugins.plumber({
+        //   errorHandler: plugins.notify.onError({
+        //     title: 'Error converting PUG',
+        //     message: 'Error: <%= error.message %>'
+        //   })}
+        // ))
         // compile pug to html
         .pipe(
           plugins.pug({
@@ -71,16 +71,16 @@ const pug = ({ gulp, taskTarget, config, plugins, args, browserSync, baseUrl }) 
             }
           })
         )
-        .pipe(plugins.notify({
-          title: 'Pug Starter - CodeTap',
-          message: 'Converting PUG into beautiful HTML'
-        }))
-        .on('error', function(error) {
-          browserSync.notify(printError(error), 25000);
-          reload = false;
-          this.emit('end');
-          logError(error.name, error.message);
-        })
+        // .pipe(plugins.notify({
+        //   title: 'Pug Starter - CodeTap',
+        //   message: 'Converting PUG into beautiful HTML'
+        // }))
+        // .on('error', function(error) {
+        //   browserSync.notify(printError(error), 25000);
+        //   reload = false;
+        //   this.emit('end');
+        //   logError(error.name, error.message);
+        // })
         // Check if embed.css exists and use inlineSource to inject it
         .pipe(
           plugins.if(
@@ -107,5 +107,3 @@ const pug = ({ gulp, taskTarget, config, plugins, args, browserSync, baseUrl }) 
 };
 
 export default pug;
-
-
