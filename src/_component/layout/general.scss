@@ -13,6 +13,7 @@ body {
 
 .sec {
     position: relative;
+    display: block;
 
     .container {
         position: relative;
@@ -160,7 +161,7 @@ h2 {
     display: block;
     width: 100%;
     padding-top: 60.78%;
-    background-image: url("../img/slide_bg.svg");
+    background-image: url(#{$baseUrl}asset/image/slide_bg.svg);
     box-shadow: 0 0 1.5625rem rgba(0,0,0,0.15);
     background-size: cover;
     border-radius: 0.25rem;
